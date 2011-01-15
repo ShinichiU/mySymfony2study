@@ -1,12 +1,12 @@
 app.config:
     charset:       UTF-8
     error_handler: null
-    csrf_secret:   xxxxxxxxxx
+    csrf_secret:   aaaaaaaaaaaaaaaaaaaaaa
     router:        { resource: "%kernel.root_dir%/config/routing.yml" }
     validation:    { enabled: true, annotations: true }
     templating:    {} #assets_version: SomeVersionScheme
     session:
-        default_locale: en
+        default_locale: ja_JP
         lifetime:       3600
         auto_start:     true
 
@@ -16,15 +16,15 @@ twig.config:
     strict_variables: %kernel.debug%
 
 ## Doctrine Configuration
-#doctrine.dbal:
-#    dbname:   xxxxxxxx
-#    user:     xxxxxxxx
-#    password: ~
+doctrine.dbal:
+    dbname:   symfony2
+    user:     root
+    password: ~
 
-#doctrine.orm:
-#    auto_generate_proxy_classes: %kernel.debug%
-#    mappings:
-#        HelloBundle: ~
+doctrine.orm:
+    auto_generate_proxy_classes: %kernel.debug%
+    mappings:
+        BlogBundle: ~
 
 ## Swiftmailer Configuration
 #swiftmailer.config:
